@@ -6,4 +6,7 @@
     <string name="user_desc">Penjelajah</string>
     <string name="example_email">richardlois1@gmail.com</string>
     <string name="about">About</string>
+    <string name="destination_location">%1$s |</string>
+    <string name="destination_rating">%1$s/5</string>
+    <string name="destination_reviews">%1$s Review</string>
 </resources>

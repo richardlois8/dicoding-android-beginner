@@ -25,7 +25,7 @@ class DestinationAdapter(
             }
             binding.destinationName.text = destination.name
             binding.destinationDistance.text = destination.distance
-            binding.destinationLocation.text = destination.location + "  |"
+            binding.destinationLocation.text = binding.root.context.getString(R.string.destination_location, destination.location)
             binding.root.setOnClickListener{
                 listener.onItemClick(destination)
             }

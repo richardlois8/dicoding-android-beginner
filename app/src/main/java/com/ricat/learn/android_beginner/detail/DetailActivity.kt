@@ -36,10 +36,10 @@ class DetailActivity : AppCompatActivity() {
         val dataDestination = intent.getParcelableExtra<Destination>(EXTRA_DESTINATION)
         binding.destinationImg.load(dataDestination?.imageUrl)
         binding.destinationName.text = dataDestination?.name
-        binding.destinationLocation.text = dataDestination?.location + "  |"
+        binding.destinationLocation.text = getString(R.string.destination_location, dataDestination?.location)
         binding.destinationDistance.text = dataDestination?.distance
-        binding.destinationRating.text = "${dataDestination?.rating}/5"
-        binding.destinationTotalReviews.text = "${dataDestination?.totalReviews} Review"
+        binding.destinationRating.text = getString(R.string.destination_rating, dataDestination?.rating.toString())
+        binding.destinationTotalReviews.text = getString(R.string.destination_reviews, dataDestination?.totalReviews.toString())
         binding.destinationTotalReviews.paintFlags = binding.destinationTotalReviews.paintFlags or android.graphics.Paint.UNDERLINE_TEXT_FLAG
         binding.destinationDesc.text = dataDestination?.description
         binding.priceRange.text = dataDestination?.priceRange
