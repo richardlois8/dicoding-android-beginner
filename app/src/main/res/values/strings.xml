@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Wanderlust Explorer</string>
+    <string name="label_populer">Populer di sekitar kamu 🔥</string>
+    <string name="hint_search_destination">Cari destinasi...</string>
+    <string name="username">Richard Lois</string>
+    <string name="user_desc">Penjelajah</string>
+    <string name="example_email">richardlois1@gmail.com</string>
+    <string name="about">About</string>
 </resources>
